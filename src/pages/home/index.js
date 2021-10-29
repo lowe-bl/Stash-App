@@ -1,10 +1,11 @@
 import React from 'react'
 import './Homepage.css';
+import Topfold from '../../components/topfold';
 
 const Homepage = () => {
     return (
         <div className="homepage">
-            <div>Topfold</div>
+            <Topfold />
             <div>ExpenseList</div>
             
         </div>
