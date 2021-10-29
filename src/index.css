@@ -3,12 +3,20 @@ html{
   --primary:#12103d;
   --secondary:#0c5d7b;
   --white:#fff;
+  --textColor:#001f3f;
+  --gutter: 6px 12px;
 }
 
 body {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+color: var(--textColor);
 background-color: var(--bgColor);
 font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textColor)
 }

@@ -1,4 +1,42 @@
+.header-container{
+    width: 50%;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: var(--gutter);
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+
 .header-logo img{
     height: 5rem;
+    
+}
+
+@media only screen and (max-width:1024px){
+    .header-container{
+        width: 90%;
+    }
+
+    .header-logo{
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width:512px){
+    .header-container{
+        width: 100%;
+    }
+
+    .header-logo{
+        height: 100%;
+    }
 }
 
