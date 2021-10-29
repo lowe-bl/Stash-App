@@ -1,5 +1,7 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer"
+import AddExpense from "./pages/add-expense";
 
 const { default: Homepage } = require("./pages/home");
 
@@ -7,11 +9,17 @@ const { default: Homepage } = require("./pages/home");
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Homepage />
+      <Switch>
+        <Route path='/' exact component={Homepage} />
+        <Route path='/add-expense' component={AddExpense} />
+      </Switch>
+      
       <Footer />
-    </div>
+    
+    </Router>
+  
   )
   
    

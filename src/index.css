@@ -16,7 +16,13 @@ background-color: var(--bgColor);
 font-family: 'Noto Sans', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: var(--textColor)
+a label {
+  cursor: pointer;
 }
+
+a  {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--textColor);
+}
+
