@@ -29,4 +29,16 @@ export const catergories = [
       icon: require("../assets/images/misc.png"),
       color: "#FFCB5E",
     },
+    {
+      id: 6,
+      title: "Auto",
+      icon: require("../assets/images/auto.png"),
+      color: "#0c5d7b",
+    },
+    {
+      id: 7,
+      title: "Housing",
+      icon: require("../assets/images/house.png"),
+      color: "#f20231",
+    },
   ];

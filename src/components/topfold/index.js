@@ -5,11 +5,15 @@ import { FaPlusCircle} from "react-icons/fa";
 import { FaArrowCircleLeft} from "react-icons/fa";
 import { FaTimesCircle} from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { useDispatch } from "react-redux";
+import { searchExpense } from "../../redux/actions/expenses";
 
 const Topfold = () => {
     const [query, setQuery]= useState("")
+    const dispatch = useDispatch();
     const handleQuery = (e)=>{
         setQuery(e.target.value);
+        dispatch(searchExpense(e.target.value));
 
     }
     return (
