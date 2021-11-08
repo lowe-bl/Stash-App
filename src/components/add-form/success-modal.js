@@ -2,6 +2,7 @@ import React from "react";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
 import "./success-modal.css";
+import { FaHome } from 'react-icons/fa';
 const SuccessModal = ({ modalOpen, setModalOpen }) => {
   const customStyles = {
     content: {
@@ -26,7 +27,7 @@ const SuccessModal = ({ modalOpen, setModalOpen }) => {
         />
         <Link to="/">
           <div className="take-home-button">
-            <i class="fi-rr-home"></i>
+            <FaHome/>
             Home
           </div>
         </Link>

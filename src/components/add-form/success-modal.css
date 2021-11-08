@@ -11,14 +11,20 @@
   }
   
   .take-home-button {
-    border: 1px solid black;
+    border: 2px solid var(--primary);
     padding: 4px 8px;
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .take-home-button i {
+
+  .take-home-button:hover{
+    color: #71ccca;
+    background-color: var(--primary);
+  }
+  
+  .take-home-button svg {
     display: flex;
     justify-content: center;
     align-items: center;

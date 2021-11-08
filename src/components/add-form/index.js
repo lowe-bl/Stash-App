@@ -36,8 +36,8 @@ const AddForm = () => {
     toast.configure()
     const handleSubmit= ()=>{
         if(title===''||amount===""||!category){
-            const notify = () => toast("Please enter valid information!", {
-               position: toast.POSITION.BOTTOM_LEFT, autoClose:5000});
+            const notify = () => toast.warning("Please enter valid information!", {
+               position: toast.POSITION.BOTTOM_LEFT, autoClose:2000});
             notify();
             return;
         };
